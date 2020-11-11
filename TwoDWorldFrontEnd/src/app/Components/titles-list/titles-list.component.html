@@ -1,0 +1,12 @@
+<div id="wrapper" class="mt-5 mx-3 row">
+  <div class="card col-lg-3 col-md-6 col-sm-12 mr-3 mb-5" *ngFor="let title of titles" [routerLink]="['/title/',title.id]">
+    <img class="card-img-top card-image" src={{title.image}} alt="Card image cap">
+    <div class="card-body row">
+      <p class="card-text text-warning col-12 font-weight-bold">{{title.name}}</p>
+      <p class="card-text col-8">Publisher: {{title.publisher}}</p>
+      <p class="card-text col-4">&#11088;{{title.rating}}</p>
+      <p class="card-text col-8">Episodes: {{title.episodes}}</p>
+      <p class="card-text col-4">{{title.year}}</p>
+    </div>
+  </div>
+</div>
